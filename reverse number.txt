@@ -1,0 +1,17 @@
+#include <stdio.h>  
+void main()
+{
+    int i,n,rem,sum=0;
+     
+    printf("\n  Enter The Number:");
+    scanf("%d",&n);
+     
+    for(i=n;i>0; )
+    {
+        rem=i%10;
+        sum=sum*10+rem;
+        i=i/10;
+    }
+     
+    printf("\n  The Reverse Number of is %d",sum);
+}  
